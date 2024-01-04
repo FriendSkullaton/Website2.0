@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+/* Headers, site specifics, such as paragraphs and links */
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 4.37rem;
+    color: #ffdd68;
+    line-height: 1.5;
+    margin-top: 1vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 0.4rem;
+}
+
+h3 {
+    font-size: 1.87rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h2, h3, h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #efcba2;
+}
+
+a {
+    color:#ffdd68;
+    transition: 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:hover {
+    color:#776651;
+}
+
+span {
+    color:#ffdd68;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+#updates details p {
+    border-bottom:#ffdd68 solid 2px;
+}
+
+#updates details p:last-of-type {
+    border-bottom: none;
+}
+
+#updates details p:first-of-type{
+    border-top:#ffdd68 solid 2px;
+}
+
+/* Body content */
+
+body {
+    background-image:url(./resources/skullbackground-static.png);
+    background-size:fit;
+    background-position: center;
+    line-height: 1.6rem;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #969387;
+    border-bottom: solid 8px #ffdd68;
+}
+
+/* Nav bar */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: square inside url('./resources/e9ba748b.gif');
+}
+
+nav li {
+    padding: .93rem;
+}
+
+nav button {
+    background-color: #efcba2;
+    transition: 0.3s;
+    border-radius: 30%;
+    border:none;
+    outline: none;
+    padding: 0.625rem;
+}
+
+nav button:hover {
+    background-color: #B3987a;
+    cursor:pointer;
+}
+
+nav button:active {
+    background-color: #776651;
+}
+
+nav button img {
+    max-width: 10px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+details summary {
+    color: #ffdd68;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+details summary:hover {
+    color:#776651;
+}
+
+#about, #graphics, #shrines, #contact, #sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 40rem;
+}
+
+#updates, #websites, #about, #graphics, #shrines, #contact, #sitemap {
+    background-color: #969387;
+    border: solid 8px #ffdd68;
+    text-align: center;
+    padding: 0.625rem;
+}
+
+#sitemap p, #sitemap a {
+    text-align: left;
+}
+
+#websites {
+    height: 30vh;
+    max-height: 30vh;
+}
+
+#updates {
+    height: 40vh;
+    max-height: 40vh;
+}
+
+#updates p {
+    border-bottom: solid 2px #ffdd68;
+}
+
+#updates p:last-of-type {
+    border-bottom: none;
+}
+
+#updates, #websites {
+    width: 15rem;
+    overflow-y: scroll;
+}
+
+#updates details p {
+    border-bottom:#ffdd68 solid 2px;
+}
+
+#updates details p:last-of-type {
+    border-bottom: none;
+}
+
+#updates details p:first-of-type{
+    border-top:#ffdd68 solid 2px;
+}
+
+#websites .inside-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    max-width:20rem;
+    height: auto;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+}
+
+#about ul {
+    list-style: none;
+}
+
+.quiz-results {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quiz-results img {
+    max-width: 20rem;
+    height: auto;
+}
+
+@media screen and (max-width: 878px) {
+    #updates, #websites, .updates-websites-container, #projects, #about, #graphics, #shrines, #links, #contact, #sitemap {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width:430px){
+    #websites {
+        display: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: -20px;
+        padding-bottom: 10px;
+    }
+    
+    .dropbutton {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #969387;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .show {
+        display:block;
+    }
+
+    .dropbutton img {
+        max-width: 30px;
+    }
+
+    .navigation-pc {
+        display: none;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #969387;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}

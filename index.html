@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <title>Skell's Test Page</title>
+</head>
+<body>
+    <header>
+        <h1>Skell</h1>
+        <nav>
+            <div class="navigation-pc">
+                <ul>
+                    <li><button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">about</button></li>
+                    <li><button class="tablinks" onclick="window.location.href='projects.html'">projects <img src="./resources/up-right-arrow.png"></button></li>
+                    <li><button class="tablinks" onclick="window.location.href='fiction.html'">writing <img src="./resources/up-right-arrow.png"></button></li>
+                    <li><button class="tablinks" onclick="openTab(event, 'graphics')" id="defaultOpen">graphics</button></li>
+                    <li><button class="tablinks" onclick="openTab(event, 'shrines')" id="defaultOpen">shrines</button></li>
+                    <li><button class="tablinks" onclick="openTab(event, 'contact')" id="defaultOpen">contact</button></li>
+                    <li><button class="tablinks" onclick="openTab(event, 'sitemap')" id="defaultOpen">sitemap</button></li>
+                    <li><button class="tablinks" onclick="window.location.href='https://skull-aton.123guestbook.com'">guestbook <img src="./resources/up-right-arrow.png"></button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button onclick="dropdownMenu()" class="dropbutton" aria-label="Menu Navigation Dropdown"><img src="./resources/menu-bar.png" alt="Menu Navigation Dropdown"></button>
+                <div id="dropdown" class="dropdown-content">
+                    <ul>
+                        <li><button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen" aria-label="about">about</button></li>
+                        <li><button class="tablinks" onclick="window.location.href='projects.html'" aria-label="projects">projects <img src="./resources/up-right-arrow.png"></button></li>
+                        <li><button class="tablinks" onclick="window.location.href='fiction.html'" aria-label="writing">writing <img src="./resources/up-right-arrow.png"></button></li>
+                        <li><button class="tablinks" onclick="openTab(event, 'graphics')" id="defaultOpen" aria-label="graphics">graphics</button></li>
+                        <li><button class="tablinks" onclick="openTab(event, 'shrines')" id="defaultOpen">shrines</button></li>
+                        <li><button class="tablinks" onclick="openTab(event, 'contact')" id="defaultOpen">contact</button></li>
+                        <li><button class="tablinks" onclick="openTab(event, 'sitemap')" id="defaultOpen">sitemap</button></li>
+                        <li><button class="tablinks" onclick="window.location.href='https://skull-aton.123guestbook.com'">guestbook <img src="./resources/up-right-arrow.png"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Updates and Websites -->
+        <div class="updates-websites-container">
+            <section id="updates">
+                <h2>Updates</h2>
+                <p><span>Current Mood:</span> <a href="https://www.imood.com/users/skull_aton"><img src="https://moods.imood.com/display/uname-skull_aton/fg-ffdd68/bg-969387/imood.gif" alt="The current mood of skull_aton at www.imood.com" border="0"></a></p>
+                <p><span>Currently Watching:</span> Percy Jackson and the Olympians</p>
+                <p><span>Currently Playing:</span> Baldur's Gate 3</p>
+                <p><span>Song on Repeat:</span> <a href="https://www.youtube.com/watch?v=zxG6DbvQWXM" target="_blank">Monstarrr by Ennaria</a></p>
+                <details>
+                    <summary>Click to Expand</summary>
+                        <p><span>09/24/23:</span> Combined Graphics and quizzes and added some alt text.</p>
+                        <p><span>09/01/23:</span> Made a Halloween website! Come stop by!</p>
+                        <p><span>08/31/23:</span> Added a credits page. (why did i forget to do this before? silly me)</p>
+                        <p><span>08/27/23:</span> wrote a Persona 4 fanfic! Can be found in the writing section.</p>
+                        <p><span>08/25/23:</span> made a grocery list web app and a basic site map. </p>
+                        <p><span>08/02/23:</span> made a base layout if anyone wants to play around with neocities coding.</p>
+                        <p><span>07/31/23:</span> updated links page</p>
+                        <p><span>07/25/23:</span> Made everything one js page, and added a fiction page, where you can read my writing</p>
+                        <p><span>07/14/23:</span> Added Webrings and fixed up shrine page</p>
+                        <p><span>07/14/23:</span> Added A Wally Shrine! There's even a fun hidden page!</p>
+                        <p><span>07/07/23:</span> fixed issue in index.</p>
+                        <p><span>07/05/23:</span> created a links page, fixed favicon issue for a few pages</p>
+                        <p><span>07/02/23:</span> updated index page. put breadcrumb for projects and writing. added ko-fi link.</p>
+                </section>
+                </details>
+            </section>
+            <section id="websites">
+                <h2>Websites</h2>
+                <div class="inside-section">
+                    <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#ffdd68" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+                    <p>Warning: Flashing!</p>
+                    <a href="links.html">my button wall</a>
+                </div>
+            </section>
+        </div>
+        <!-- About Me Section -->
+        <section id="about" class="tabcontent" style="display: none;">
+            <div class="image-container">
+                <img src="./resources/skell-icon.png" alt="digital art of Skell, a blonde haired femme presenting person making a heart with their hands">
+            </div>
+            <h2>About Me</h2>
+            <img src="./resources/skull1.gif" alt="icon of a cartoon skull">
+            <p>Hi, I'm Skell! <span>(They/Them)</span></p>
+            <div class="about-tags">
+                <a href="https://www1.flightrising.com/forums/cc/3078623" target="_blank"><img src="./resources/theythemtag.png" alt="they them pronouns"><img src="./resources/nonbinary.png" alt="nonbinary"><img src="./resources/agender.png" alt="agender"><img src="./resources/bipan.png" alt="bi-pan"><br><img src="./resources/audhd.png" alt="autism adhd"><img src="./resources/cat.png" alt="cat owner"><img src="./resources/halloween.png" alt="halloween"><img src="./resources/gamer.png" alt="gamer"><br><img src="./resources/liminalspace.png" alt="liminal space"><img src="./resources/weirdcore.png" alt="weirdcore"><img src="./resources/dreamcore.png" alt="dreamcore"><img src="./resources/synthcore.png" alt="synthcore"></a>
+            </div>
+            <p>I'm a budding web developer from Australia that generally focuses on y2k web aesthetics and recreation.</p>
+            <p>In my free time I play video games and write.</p>
+            <p>Make sure to say hi or follow on my <a href="https://neocities.org/site/skull-aton" target="_blank">neocities profile</a>!</p>
+            <p>Wanna donate? Check out my <a href="https://ko-fi.com/skullaton" target="_blank">ko-fi!</a></p>
+            <h2>Interests</h2>
+            <p>Click to expand each section.</p>
+            <details>
+                <summary>Video Games</summary>
+                <ul>
+                    <li>Persona 3 and 5</li>
+                    <li>Final Fantasy 7, 8, 10, 15</li>
+                    <li>Spyro</li>
+                    <li>Stardew Valley</li>
+                    <li>Stray</li>
+                    <li>The Elder Scrolls</li>
+                    <li>...and so many indie games.</li>
+                </ul>
+                
+            </details>
+            <details>
+                <summary>Shows</summary>
+                <ul>
+                    <li>Gravity Falls</li>
+                    <li>The Owl House</li>
+                    <li>Infinity Train</li>
+                    <li>Amphibia</li>
+                    <li>Scott Pilgrim</li>
+                    <li>Percy Jackson</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Other Media</summary>
+                <ul>
+                    <li>Welcome Home</li>
+                    <li>Watcher</li>
+                </ul>
+            </details>
+        </section>
+        <!-- Graphics Section -->
+        <section id="graphics" class="tabcontent" style="display: none;">
+            <h2>Graphics and Fun Stuff</h2>
+            <img src="./resources/skulldiv.gif" alt="a gif divider that has skulls and stars.">
+            <p>Fun stuff I found on the web!</p>
+            <p><span>Warning!!</span> There may be flashing!!</p>
+            <details>
+                <summary>Blinkies</summary>
+                <a href="https://plasticdino.neocities.org/blinkie/blinkies" target="_blank"><img src="./resources/alife.gif" alt="A life? What's that?"></a>
+                <a href="https://plasticdino.neocities.org/blinkie/blinkies" target="_blank"><img src="./resources/eat shit.gif" alt="Eat shit Transphobes"></a>
+                <a href="https://plasticdino.neocities.org/blinkie/blinkies" target="_blank"><img src="./resources/transrights.gif" alt="Trans Rights"></a>
+                <a href="https://plasticdino.neocities.org/blinkie/blinkies" target="_blank"><img src="./resources/enby.gif" alt="I am Non-binary"></a>
+                <img src="./resources/ghost.gif" alt="Real Life Ghost">
+                <a href="https://corruptedunicorn.neocities.org/blinkies" target="_blank"><img src="./resources/ilovehalloween.gif" alt="I love Halloween"></a>
+                <a href="https://blinki.es/movie/i-see-elves.html" target="_blank"><img src="./resources/iseeelves.gif" alt="I see Elves"></a>
+                <a href="https://www.tumblr.com/scungledfiles/698862855847608320/hello-everyone-please-appreciate-my-creation?source=share" target="_blank"><img src="./resources/ohworm.gif" alt="Oh worm"></a>
+                <a href="https://corruptedunicorn.neocities.org/blinkies" target="_blank"><img src="./resources/perish.gif" alt="Obama saying Then Perish"></a>
+                <a href="https://vampirevalentine.neocities.org/" target="_blank"><img src="./resources/tummy.gif" alt="A skeleton with the text that reads my tummy hurts"></a>
+            </details>
+            <details>
+                <summary>Stamps</summary>
+                    <img src="./resources/believe.png" alt="UFO with I want to Believe">
+                    <img src="./resources/f55fc7787ddf061662b664b80add4edb885a340b.png" alt="Aliens">
+                    <img src="./resources/lisafrank.png" alt="Y2K Stickers">
+                    <img src="./resources/couldbeworse.png" alt="A banner that reads 'it could be worse'">
+                    <img src="./resources/rainbowstamp.png" alt="A rainbow">
+                    <img src="./resources/d1rmhic-d159b941-3a02-46ed-87d5-c89826fac821.png" alt="Cloud Strife">
+                    <img src="./resources/dak6fgg-3ce3d95e-e179-4c2c-97da-3dbe3f948222.png" alt="World of Warcraft">
+                    <img src="./resources/tumblr_pk66rgJiTM1xwpnjlo1_100.png" alt="Game controllers">
+                    <img src="./resources/spyro1.gif" alt="Spyro flying">
+                    <img src="./resources/spyro2.gif" alt="Spyro flying">
+                    <img src="./resources/garfpropa.png" alt="Garfield saying you are not immune to propaganda">
+                    <img src="./resources/hitoshi.gif" alt="Hitoshi">
+                    <img src="./resources/sonic2.png" alt="Sonic saying I see you sinning">
+                    <img src="./resources/cj.png" alt="CJ saying ah shit, here we go again.">
+                    <img src="./resources/mystery.gif" alt="It is a mystery">
+                    <img src="./resources/yee.png" alt="Yee">
+                    <img src="./resources/theythem.png" alt="They them fish">
+                    <img src="./resources/trans-miku.png" alt="Miku Hatsune">
+                    <img src="./resources/blm.png" alt="Black lives matter">
+                    <img src="./resources/unicorn.png" alt="The Last Unicorn">
+            </details>
+            <details>
+                <summary>Collectibles</summary>
+                <a href="https://dragcave.net/view/fHGgk" target="_blank"><img src="https://dragcave.net/image/fHGgk.gif" style="border-width:0" alt="Adopt one today!"/></a>
+                <a href="https://dragcave.net/view/0Bj8Y" target="_blank"><img src="https://dragcave.net/image/0Bj8Y.gif" style="border-width:0" alt="Adopt one today!"/></a>
+                <a href="https://www.lejlart.com/apple.html" target="_blank"><img src="./resources/skellypink.gif" alt="creepy cute skull"></a>
+            </details>
+            <details>
+                <summary>Quiz Results</summary>
+                <div class="quiz-results">
+                    <a href="http://www.springhole.net" target="SH.net" target="_blank"><img src="http://i213.photobucket.com/albums/cc224/SyeraMiktayee/QuizPics/GhostQuizResults/cheerfulghost.gif" alt="what type of ghost are you quiz"></a>
+        
+                    <a href="http://www.nerdtests.com/ft_nq.php" target="_blank"><img src="http://www.nerdtests.com/images/ft/nq/3da57b0395.gif" alt="nerd test"></a>
+        
+                    <a href="http://www.springhole.net" target="SH.net" target="_blank"><img src="http://i213.photobucket.com/albums/cc224/SyeraMiktayee/QuizPics/whatfairy_firefairy.gif"  alt="what type of fairy are you quiz"></a>
+        
+                    <a href="https://web.archive.org/web/20050227091213/http://star-girl.org/" target="_blank">
+                    <img src="https://web.archive.org/web/20050227091213im_/http://www.star-girl.org/pages/quizzes/idealjob/three.gif" alt="star-girl.org" border="0"></a>
+        
+                    <a href="https://www.theotaku.com/quizzes/view/2059/what_popular_video_game_genre_are_you%3F"><img border="0" src="http://www.theotaku.com/guru_results/2059_Puzzle.jpg" alt="What Popular Video Game Genre Are You?" /></a>
+        
+                    <a href="https://web.archive.org/web/20030820200955/http://www.artificial-soul.net/test/bishounen/" target="new"><img src="https://web.archive.org/web/20030820200955im_/http://www.artificial-soul.net/test/bishounen/innocent.jpg" border="0"></a>
+        
+                    <a href="https://www.idrlabs.com/4-axes/test.php" target="_blank"><img src="./resources/Screenshot 2023-06-14 154154.png" alt="4 axes quiz"></a>
+        
+                    <a href="https://www.idrlabs.com/gender/test.php" target="_blank"><img src="./resources/genderrole-undifferentiated-androgynous.png" alt="Gender Role quiz"></a>
+        
+                    <a href="https://www.idrlabs.com/gender-coordinates/test.php" target="_blank"><img src="./resources/gender-coordinates.png" alt="gender coordinates"></a>
+                
+                </div>
+            </details>
+        </section>
+        <!-- Shrines Section -->
+        <section id="shrines" class="tabcontent" style="display: none;">
+            <h2>Shrines</h2>
+            <img src="./resources/skulldiv.gif" alt="a gif divider that has skulls and stars.">
+            <h3><img src="./resources/spiral.gif" alt="gif of a red spiral."> <a href="./shrines/welcomehome.html">Wally Darling</a> <img src="./resources/spiral.gif" alt="gif of a red spiral."></h3>
+        </section>
+        <!-- Contact section -->
+        <section id="contact" class="tabcontent" style="display: none;">
+            <h2>Contact</h2>
+            <img src="./resources/skulldiv.gif" alt="a gif divider that has skulls and stars.">
+            <p><img src="./resources/computer.gif" alt="icon gif of a computer with a smiley face"> Email: <a href="mailto:skell@skull-aton.com">Skell's Email</a></p>
+            <p><img src="./resources/rainbow.gif" alt="rainbow gif icon"> Tumblr: <a href="https://skullaton.tumblr.com/" target="_blank">skullaton</a></p>
+            <p><img src="./resources/writing.gif" alt="icon of a pink notebook and pen"> Ao3: <a href="https://archiveofourown.org/users/Skull_aton" target="_blank">Skull_aton</a></p>
+            <p><img src="./resources/url.gif" alt="gif icon with a searchbar that says URL on top"> Spacehey: <a href="https://spacehey.com/skellfriend" target="_blank">Skellfriend</a></p>
+            <p><img src="./resources/sparklepurple.gif" alt="gif icon of shiny purple stars"> ko-fi: <a href="https://ko-fi.com/skullaton" target="_blank">Skell</a></p>
+        </section>
+        <!-- Sitemap -->
+        <section id="sitemap" class="tabcontent" style="display: none;">
+            <h2>Sitemap</h2>
+            <img src="./resources/skulldiv.gif" alt="a gif divider that has skulls and stars.">
+            <p>about</p>
+            <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.com/links.html" target="_blank">links</a></p>
+                <p><a href="https://skull-aton.com/projects.html" target="_blank">projects</a></p>
+                <p>&nbsp; &nbsp; &nbsp; &#8627; themes</p>
+                <p>&nbsp; &nbsp; &nbsp; &#8627; websites</p>
+                <p>&nbsp; &nbsp; &nbsp; &#8627; games</p>
+                <p><a href="https://skull-aton.neocities.org/fiction" target="_blank">writing</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &#8627; original fiction</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/poetry" target="_blank">poetry</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &#8627; fanfiction</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/jester" target="_blank">The Jester's Fool</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/escapism" target="_blank">Escapism</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/coldhands" target="_blank">cold hands, warm hearts</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/heartofglass" target="_blank">Heart of Glass</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/applespicepancakes" target="_blank">Apple Spice Pancakes</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/howtobehuman" target="_blank">How to be Human</a></p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/writing/dimension69" target="_blank">Dimension 69 (18+ NSFW)</a></p>
+
+
+                <p>graphics n fun stuff</p>
+                <p>shrines</p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://skull-aton.neocities.org/shrines/welcomehome" target="_blank">Wally Darling</a></p>
+                <p>contact</p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="mailto:skell@skull-aton.com">email</a></p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://skullaton.tumblr.com" target="_blank">tumblr</a></p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://archiveofourown.org/users/Skull_aton" target="_blank">Ao3</a></p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://spacehey.com/skellfriend" target="_blank">Spacehey</a></p>
+                    <p>&nbsp; &nbsp; &nbsp; &#8627; <a href="https://ko-fi.com/skullaton" target="_blank">ko-fi</a></p>
+                <p>sitemap</p>
+                <p><a href="https://skull-aton.123guestbook.com" target="_blank">guestbook</a></p>
+        </section>
+    </main>
+    <footer>
+        <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=Skell"></iframe>
+        <a href="./credits.html">Credits</a>
+    </footer>
+    <script>
+        function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+
+        // Dropdown
+        function dropdownMenu() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if(!event.target.matches('.dropbutton')) {
+                var dropdowns =document.getElementByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
