@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="projectsstyles.css" rel="stylesheet">
-    <title>Skell's Projects</title>
+    <title>Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuggles&family=Pixelify+Sans&family=Reenie+Beanie&display=swap" rel="stylesheet"> 
@@ -16,14 +16,15 @@
         </div>
         <nav>
             <ul>
-                <li><button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">about</button></li>
-                <li><button class="tablinks" onclick="openTab(event, 'themes')">themes</button></li>
-                <li><button class="tablinks" onclick="openTab(event, 'websites')">websites</button></li>
-                <li><button class="tablinks" onclick="openTab(event, 'games')">games</button></li>
-                <li><button class="tablinks" onclick="window.location.href='index.html'">Main Page <img src="./resources/up-right-arrow.png"></button></li>
+                <li><button class="tablinks one" onclick="openTab(event, 'about')" id="defaultOpen">about</button></li>
+                <li><button class="tablinks two" onclick="openTab(event, 'themes')">themes</button></li>
+                <li><button class="tablinks three" onclick="openTab(event, 'websites')">websites</button></li>
+                <li><button class="tablinks four" onclick="openTab(event, 'games')">games</button></li>
+                <li><button class="tablinks five" onclick="window.location.href='index.html'">Main Page <img src="./resources/up-right-arrow.png"></button></li>
         </nav>
     </header>
     <main>
+        <!-- about -->
         <section id="about" class="tabcontent" style="display: none;">
             <h2>About</h2>
             <p>This page is to showcase all my personal projects, from themes, to websites/webapps, to games. It also shows what's in development!!</p>
@@ -31,9 +32,17 @@
             <p>So far I've been working on a Twine game, and dipping my toes in Ren'py and Godot</p>
         
         </section>
+        <!-- Themes -->
         <section id="themes" class="tabcontent" style="display: none;">
+            <aside class="section-navigation">
+                <ul>
+                    <li><a href="#baselayout">Base Layout</a></li>
+                    <li><a href="#spacehey">Spacehey</a></li>
+                </ul>
+            </aside>
             <div class="section-container">
-                <div class="card-container baseLayout">
+
+                <div class="card-container" id="baselayout">
                     <h2>Responsive Base Layout</h2>
                     <h3>Rainbow Bright</h3>
                     <div class="two-images">
@@ -50,10 +59,11 @@
                         <p>Fully modifiable base layout</p>
                         <ul>
                             <li><a href="https://skull-aton.com/Themes/rainbowbright/basethemerb">Live Site</a></li>
-                            <li><a href="">Code</a></li>
+                            <li><a href="https://github.com/FriendSkullaton/base-theme/blob/main/index.html">Code</a></li>
                         </ul>
                 </div>
-                <section class="card-container spacehey">
+
+                <section class="card-container" id="spacehey">
                     <h2>Spacehey</h2>
                     <h3>Welcome Home</h3>
                     <div class="image-container">
@@ -64,11 +74,12 @@
                     <p>Uses HTML and CSS</p>
                     <p>Is NOT responsive or mobile friendly. :(</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://spacehey.com/profile?id=1849574">Live Site</a></li>
+                        <li><a href="https://layouts.spacehey.com/layout?id=32650">Code</a></li>
                     </ul>
                 </section>
-                <section class="card-container spacehey">
+
+                <section class="card-container">
                     <h2>Spacehey</h2>
                     <h3>Runescape</h3>
                     <div class="image-container">
@@ -79,15 +90,25 @@
                     <p>Uses HTML and CSS</p>
                     <p>Is NOT responsive or mobile friendly. :(</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://spacehey.com/profile?id=1838105">Live Site</a></li>
+                        <li><a href="https://layouts.spacehey.com/layout?id=32406">Code</a></li>
                     </ul>
                 </section>
             </div>
         </section>
+
+        <!-- Websites -->
         <section id="websites" class="tabcontent" style="display: none;">
+            <div class="section-navigation">
+                <ul>
+                    <li><a href="#website">Websites</a></li>
+                    <li><a href="#webapp">Web Apps</a></li>
+                    <li><a href="#school">School projects</a></li>
+                
+                </ul>
+                </div>
             <div class="section-container">
-                <section class="card-container website">
+                <section class="card-container" id="website">
                     <h2>Skell's Skeletal Party</h2>
                     <h3>Website</h3>
                     <div class="image-container">
@@ -100,11 +121,11 @@
                     <p>Made with HTML, CSS, Javascript, and jquery</p>
                     <p>Responsive, but the dancing skeleton feature is not mobile friendly.</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
+                        <li><a href="https://skellsparty.neocities.org/">Live Site</a></li>
                         <li><a href="">Code</a></li>
                     </ul>
                 </section>
-                <section class="card-container webapp">
+                <section class="card-container" id="webapp">
                     <h2>Grocery List</h2>
                     <h3>Web App</h3>
                     <div class="image-container">
@@ -114,10 +135,10 @@
                     <p>A grocery list app made with ReactJS</p>
                     <ul>
                         <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://github.com/FriendSkullaton/Grocery-todo-app">Code</a></li>
                     </ul>
                 </section>
-                <section class="card-container school">
+                <section class="card-container" id="school">
                     <h2>Kat Klub</h2>
                     <h3>Parody Website</h3>
                     <div class="image-container">
@@ -126,11 +147,11 @@
                     <h4>Description</h4>
                     <p>School project made with HTML and CSS</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://friendskullaton.github.io/Club/">Live Site</a></li>
+                        <li><a href="https://github.com/FriendSkullaton/Club">Code</a></li>
                     </ul>
                 </section>
-                <section class="card-container school">
+                <section class="card-container" id="school">
                     <h2>Ex-Treme Hate</h2>
                     <h3>Parody Website</h3>
                     <div class="image-container">
@@ -139,15 +160,24 @@
                     <h4>Description</h4>
                     <p>School project made with HTML and CSS</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://friendskullaton.github.io/Business-Project/">Live Site</a></li>
+                        <li><a href="https://github.com/FriendSkullaton/Business-Project">Code</a></li>
                     </ul>
                 </section>
             </div>
         </section>
+
+        <!-- Games -->
         <section id="games" class="tabcontent" style="display: none;">
+            <div class="section-navigation">
+                <ul>
+                    <li><a href="#learning-projects">Projects</a></li>
+                    <li><a href="#under-development">Under Development</a></li>
+                
+                </ul>
+            </div>
             <div class="section-container">
-                <section class="card-container incremental">
+                <section class="card-container" id="learning-projects">
                     <h2>Mining Game</h2>
                     <h3>Learning Project</h3>
                     <div class="image-container">
@@ -157,11 +187,11 @@
                     <p>A project made with me and a friend where we designed an incremental game of being dwarves mining gold.</p>
                     <p>Made with HTML, CSS, and Javascript.</p>
                     <ul>
-                        <li><a href="">Live Site</a></li>
-                        <li><a href="">Code</a></li>
+                        <li><a href="https://deboi2nd.github.io/Mining-project/">Live Site</a></li>
+                        <li><a href="https://github.com/Deboi2nd/Mining-project">Code</a></li>
                     </ul>
                 </section>
-                <section class="card-container under-development">
+                <section class="card-container" id="under-development">
                     <h2>'drēm</h2>
                     <h3>Under Development</h3>
                     <div class="image-container">
@@ -175,7 +205,7 @@
     </section>
     </main>
     <footer>
-
+        <a href="credits.html">credits</a>
     </footer>
     <script>
     function openTab(evt, tabName) {
@@ -192,10 +222,6 @@
         evt.currentTarget.className += " active";
         }
         document.getElementById("defaultOpen").click();
-
-    function baseLayoutBtn(){
-        var x = document.getElementsByClassName("baseLayout")
-    }
     </script>
 </body>
 </html>

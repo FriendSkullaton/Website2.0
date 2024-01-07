@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym629.png), auto !important;
 }
 
 html {
@@ -17,11 +18,21 @@ body {
 
 h2 {
     font-size: 2rem;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h3, h4 {
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 p {
     font-family: monospace;
     padding: 0.5rem;
+}
+
+a {
+    font-family: monospace;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym635.png),auto !important;
 }
 
 header {
@@ -65,11 +76,24 @@ nav button {
     width: 15rem;
 }
 
-nav button:hover {
-    background-color: #63009c;
+button:hover {
+    letter-spacing:3px;
+    font-family:'Pixelify Sans', sans-serif;
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym635.png),auto !important;
 }
 
-nav button:active {
+.one:hover {
+    background-color: #6f8dff;
+}
+
+.two:hover { background-color:#6fff6f; }
+
+.three:hover{ background-color:#ffc76f; }
+.four:hover { background-color:#ff6f6f; }
+.five:hover {background-color: #df6fff;}
+
+
+button:active {
     background-color: #310063;
 }
 
@@ -86,9 +110,40 @@ nav button img {
     padding: 1rem;
 }
 
+
+.section-navigation ul {
+    list-style: square inside url('./resources/telescope.gif');
+    padding: 20px;
+    position: fixed;
+    left: 10%;
+}
+
+.section-navigation li {
+    background-color:#6f8dff;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.section-navigation li:hover {
+    background-color:#310063;
+}
+
+.section-navigation a {
+    color:#6331ce;
+    text-decoration: none;
+    transition: 0.3s;
+    text-transform: lowercase;
+}
+
+.section-navigation a:hover {
+    color: white;
+    letter-spacing: 3px;
+}
+
 .section-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -96,7 +151,7 @@ nav button img {
 
 .card-container {
     background-color: black;
-    border: 2px solid #6331ce;
+    border: 2px dotted #6331ce;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,4 +203,20 @@ nav button img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-navigation ul {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
 }
