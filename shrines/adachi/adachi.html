@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Egocentric Police Dick</title>
+    <link href="./styles/adachistyles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main-img">
+        <img src="./resources/adachi-standing.png">
+    </div>
+    <div id="name">
+        <h1>Tohru Adachi</h1>
+        <h2>The Egocentric Police Dick</h2>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">home</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'gallery')">gallery</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'fan')">fan stuff</button></li>
+                <li><button class="tablinks" onclick="openTab(event, 'credits')">credits</button></li>
+                <li><button class="tablinks" onclick="window.location.href='https://skull-aton.com/'">main site</button></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="home" class="tabcontent" style="display: none;">
+                <div class="quote">
+                    <p><span>"</span>Let's be honest. There's nothing great about the real world, is there? It's just dull and annoying as hell. No one accepts that's the way things are... They're just stuck with it because they can't deny it, either. Those who actually succeed in life... They just happen to be born with the magic ticket called "talent." If you don't have it, you can either accept or deny that fact until you die. That's your only choice. Once you realize that, all you have left in life is despair. The ultimate game over. Wouldn't it be better if that kind of reality was wiped away?<span>"</span></p>
+                </div>
+                <p>-<span>Tohru Adachi</span> from Persona 4</p>
+                <div class="about">
+                    <p><span>Name:</span> Tohru Adachi</p>
+                    <p><span>Age:</span> 27</p>
+                    <p><span>Date of birth:</span> February 1st, 1984</p>
+                    <p><span>Occupation:</span> Detective</p>
+                    <p><span>Arcana:</span> Jester/Hunger</p>
+                </div>
+
+                <p>Adachi is a twist villain in Persona 4. At first, he is a goofy rookie detective that lives in the the small town of Inaba, who befriends the protagonist and their family.</p>
+                <p>He, however, is much more sinister then the clown he pretends to be.</p>
+            </section>
+            <!-- GALLERY SECTION -->
+            <section id="gallery" class="tabcontent" style="display: none;">
+                <div class="gallery" onclick="openLightbox(event)">
+                <img src="./resources/adachitohru.png" alt="Adachi coming out of TV">
+                <img src="./resources/p4u.png" alt="Adachi in Persona 4 U manga">
+                <img src="./resources/cabbageman.png" alt="Adachi from the manga looking for cabbage">
+                <img src="./resources/fa21b27cbfd11aa4a73258c5819dd79c.gif" alt="adachi from persona 4 u sprite walking backwords.">
+                <img src="./resources/bitchesandwhores.png" alt="adachi saying bitches and whores">
+                <img src="./resources/trueadachi.jpg" alt="meme of adachi with font underneath saying TRUE">
+                </div>
+
+                <div id="lightbox">
+                    <!-- Close button -->
+                    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+            
+                    <!-- Main lightbox image -->
+                    <img id="lightbox-img" src="" alt="lightbox image">
+            
+                    <!-- Thumbnails container -->
+                    <div id="thumbnail-container">
+                        <!-- Thumbnails will be added dynamically using JavaScript -->
+                    </div>
+            
+                    <!-- Previous and Next buttons -->
+                    <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+                    <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+                </div>
+            
+            
+            </section>
+            <!-- FAN STUFF SECTION -->
+            <section id="fan" class="tabcontent" style="display: none;">
+                <h3>Fanfic</h3>
+                <a href="https://skull-aton.com/writing/jester">The Jester's Fool</a>
+                <p><span>WARNING!:</span> Not proofread. Still a WIP</p>
+                <p><span>Rating:</span> M</p>
+                <p><span>Genre:</span> Romance/Fluff/Horror</p>
+                <p><span>Words:</span> 3,209</p>
+                <p><span>Status:</span> Work in Progress</p>
+                <p><span>Trigger Warnings:</span> Misogyny, Sexism, Murder, Betrayal, Manipulation, Hopelessness</p>
+                <p><span>Summary:</span> 
+
+                    You decided to move to a rural town due to unexpected financial troubles you had in the city.
+                    
+                    As you settle in, you quickly befriend a local lazy cop at the department store.
+                    
+                    Which is good news! There's a serial killer on the loose, so having a cop for a friend wouldn't be such a bad idea!
+                    </p>
+
+                <h3>Fanart</h3>
+                <a href="https://skullaton.tumblr.com/tagged/tohru%20adachi/">Check out the fanart collection!</a>
+            </section>
+            <!-- CREDITS SECTION -->
+            <section id="credits" class="tabcontent" style="display: none;">
+                <p>All assets on this site belong to Atlus. This is a fan website and I do not own Adachi or Persona 4.</p>
+                <p>This is simply a fan shrine to the character.</p>
+                <p>Gallery code from <a href="https://webdesign.tutsplus.com/build-an-interactive-image-gallery-with-html-css-and-javascript--cms-107881t">here</a></p>
+            </section>
+
+        </main>
+    </div>
+    <div id="side-img">
+        <img src="./resources/adachi-gun.gif">
+    </div>
+</body>
+<script>
+    function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+
+    
+
+let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+        const totalImages = images.length;
+
+        // Open the lightbox
+        function openLightbox(event) {
+            if (event.target.tagName === 'IMG') {
+                const clickedIndex = Array.from(images).indexOf(event.target);
+                currentIndex = clickedIndex;
+                updateLightboxImage();
+                document.getElementById('lightbox').style.display = 'flex';
+            }
+        }
+
+        // Close the lightbox
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Change the lightbox image based on direction (1 for next, -1 for prev)
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex >= totalImages) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = totalImages - 1;
+            }
+            updateLightboxImage();
+        }
+
+        // Update the lightbox image and thumbnails
+        function updateLightboxImage() {
+            const lightboxImg = document.getElementById('lightbox-img');
+            const thumbnailContainer = document.getElementById('thumbnail-container');
+
+            // Update the main lightbox image
+            lightboxImg.src = images[currentIndex].src;
+
+            // Clear existing thumbnails
+            thumbnailContainer.innerHTML = '';
+
+            // Add new thumbnails
+            images.forEach((image, index) => {
+                const thumbnail = document.createElement('img');
+                thumbnail.src = image.src;
+                thumbnail.alt = `Thumbnail ${index + 1}`;
+                thumbnail.classList.add('thumbnail');
+                thumbnail.addEventListener('click', () => updateMainImage(index));
+                thumbnailContainer.appendChild(thumbnail);
+            });
+
+            // Highlight the current thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails[currentIndex].classList.add('active-thumbnail');
+        }
+
+        // Update the main lightbox image when a thumbnail is clicked
+        function updateMainImage(index) {
+            currentIndex = index;
+            updateLightboxImage();
+        }
+
+        // Add initial thumbnails
+        updateLightboxImage();
+
+
+        // To add keyboard navigation (left/right arrow keys)
+        document.addEventListener('keydown', function (e) {
+            if (document.getElementById('lightbox').style.display === 'flex') {
+                if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                }
+            }
+        });
+
+
+</script>
+</html>
