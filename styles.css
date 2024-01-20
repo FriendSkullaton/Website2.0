@@ -211,6 +211,12 @@ details summary:hover {
     width: 100%;
     height: auto;
     border-radius:50%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.image-container img:hover {
+    opacity: 1;
 }
 
 #about ul {
